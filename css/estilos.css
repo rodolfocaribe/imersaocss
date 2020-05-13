@@ -1,0 +1,101 @@
+
+/* soft reset do css*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    background-image: url(https://www.solidbackgrounds.com/images/1920x1080/1920x1080-baby-blue-solid-color-background.jpg);
+    font-family: 'Source Sans Pro', sans-serif;
+    background-size: auto 100vh;
+    height: 100vh;
+    font-size: 10px;
+  }
+/*SE A TELA TIVER PELO MENOS 400PX VAI CARREGAR ESTES ESTILOS*/
+  @media (min-width: 400px) {
+    body {
+      font-size: 14px;
+
+    }
+}
+  header {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .menu {
+    background-color: none;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+  }
+  .menu ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  .menu li{
+    list-style: none;
+  }
+  .menu a {  
+    padding: 10px 20px;
+    display: block;
+  }
+  a {
+    text-decoration: none;
+    color: #383838;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  .site-title{
+    font-size: 3em;
+    font-family: 'Gloria Hallelujah', cursive;
+  }
+  .site-title {
+   color: #383838;
+   text-align: center;
+   font-family: 'Architects Daughter', cursive; 
+  }
+  .site-subtitle {
+   color: #383838;
+   text-align: center;
+   font-family: 'Architects Daughter', cursive;
+  }
+  .portifolio {
+    padding: 2em;
+  }
+  .portifolio .grid {
+    display: grid;
+    gap: 2em; 
+  }
+  @media (min-width: 560px) {
+    .portifolio .grid {
+      grid-template-columns: 240px 240px;
+      justify-content: center;
+    }
+  }
+  @media (min-width: 840px) {
+    .portifolio .grid {
+      grid-template-columns: 240px 240px 240px;
+      justify-content: center;
+    }
+  }
+  .portifolio h2 {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #383838;
+    margin-bottom: 2em;
+    font-size: 2.5em; 
+    text-align: center;   
+  }
+  .portifolio figure{
+    text-align: center;
+  }
+  .img-portfolio {
+    height: 180px;
+    width: 240px;
+    color: #383838;
+    object-position: bottom;
+  }
